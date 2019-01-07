@@ -3,7 +3,7 @@ import os
 
 here = os.path.abspath(os.path.abspath(__file__))
 
-requirements_file = os.path.join(here, 'requirements.txt', 'requirements.txt')
+requirements_file = os.path.join(here, 'requirements.txt')
 if os.path.exists(requirements_file) and os.path.isfile(requirements_file):
     with open(requirements_file) as f:
         install_requires = [
@@ -13,9 +13,9 @@ else:
 
 setup(
     name='demo_package',
-    version='0.1.12',
+    version='0.1.13',
     description='description :: (%s) (%s) ' % (
-        requirements_file, os.listdir(requirements_file)),
+        requirements_file, os.listdir(here)),
 
     url='https://github.com/dart-neitro/demo_package',
     author='Konstantin Neitro',
