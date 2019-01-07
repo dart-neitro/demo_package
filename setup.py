@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-here = os.path.abspath(os.path.abspath(__file__))
+here = os.path.dirname(os.path.abspath(__file__))
 
 requirements_file = os.path.join(here, 'requirements.txt')
 if os.path.exists(requirements_file) and os.path.isfile(requirements_file):
@@ -13,7 +13,7 @@ else:
 
 setup(
     name='demo_package',
-    version='0.1.13',
+    version='0.1.14',
     description='description :: (%s) (%s) ' % (
         requirements_file, os.listdir(here)),
 
