@@ -15,8 +15,9 @@ print('*** %s ***' % install_requires)
 
 setup(
     name='demo_package',
-    version='0.1.10',
-    description='description',
+    version='0.1.11',
+    description='description :: (%s) (%s) ' % (requirements_file,
+                                               install_requires),
 
     url='https://github.com/dart-neitro/demo_package1',
     author='Konstantin Neitro',
