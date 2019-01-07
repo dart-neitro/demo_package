@@ -1,3 +1,6 @@
+import requests
+
 
 class XXX:
-    pass
+    def get(self):
+        return requests.get('https://google.com')
