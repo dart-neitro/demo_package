@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='demo_package',
-    version='0.1.003',
+    version='0.1.4',
     description='description',
 
     url='https://github.com/RafaelBroseghini/OxfordAPI',
