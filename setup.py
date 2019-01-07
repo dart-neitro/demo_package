@@ -11,6 +11,8 @@ if os.path.exists(requirements_file) and os.path.isfile(requirements_file):
 else:
     install_requires = []
 
+print('*** %s ***' % install_requires)
+
 setup(
     name='demo_package',
     version='0.1.10',
